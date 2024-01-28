@@ -1,9 +1,14 @@
 import React from 'react';
+import Header from '../../shared/Header/Header';
+import { Outlet } from 'react-router-dom';
+import Footer from '../../Routes/Footer/Footer';
 
 const Main = () => {
     return (
         <div>
-            this is the main folder
+            <Header></Header>
+            <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };

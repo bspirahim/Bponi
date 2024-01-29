@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import useProductData from '../../../utils/useProductData';
 import Modal from '../../../shared/Modal/Modal';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Dropdown from '../../../components/Dropdown';
 
 
@@ -22,7 +22,7 @@ const Product1 = () => {
     return (
         <div className='col-span-3 pe-6'>
             <div className='mt-8 mb-6 md:space-y-1'>
-                <p className=' text-black opacity-50  hover:opacity-100 cursor-pointer mb-3.5'>Helios <span className='ps-4'>/</span></p>
+                <Link to='/' className=' text-black opacity-50  hover:opacity-100 cursor-pointer mb-3.5 block'>Helios <span className='ps-4'>/</span></Link>
 
                 <h2 className='font-bold text-[40px] leading-9 text-[#21201f]'>{id}</h2>
 

@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #F5F4F2
 }
 
 
@@ -75,4 +76,37 @@ body {
 }
 .swiper-slide {
     height: 100% !important;
+}
+.swiper-button-next, .swiper-button-prev{
+    box-shadow: 0 8px 20px rgba(117, 115, 111, 0.2);
+    width: 46px !important;
+    background-color: #ffffff;
+    transition: all .2s;
+    border-radius: 100px;
+    right: 5px !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 15px !important;
+    font-weight: bold;
+    color: black;
+}
+.swiper-button-prev{
+    left: 5px !important;
+}
+
+.SupportChatButton_button {
+    left: 20px;
+    width: 60px;
+    border: none;
+    bottom: 20px;
+    cursor: pointer;
+    height: 60px;
+    display: flex;
+    z-index: 110;
+    position: fixed;
+    background: #FCE000;
+    box-shadow: 0 10px 20px 0 rgba(252,224,0,0.43), 0 5px 10px 0 rgba(252,224,0,0.28);
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
 }

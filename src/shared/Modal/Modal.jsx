@@ -18,7 +18,7 @@ const Modal = ({ modalData }) => {
                 <div>
                     <img className='rounded-xl' src={modalData.image} alt="" />
                 </div>
-                <div>
+                <div className='ms-10'>
                     <h3 className="font-bold text-2xl">{modalData.name}</h3>
                     <p className="text-gray-500 text-lg">1.2</p>
                     <div className='flex items-center md:space-x-5'>

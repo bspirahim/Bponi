@@ -11,7 +11,7 @@ const Main = () => {
         <div>
             <Header></Header>
 
-            <div className='grid grid-flow-row-dense grid-cols-4 grid-rows-1 bg-[#F5F4F2] max-w-screen-xl mx-auto pb-16 mt-20'>
+            <div className='grid grid-flow-row-dense grid-cols-4 grid-rows-1 max-w-screen-xl mx-auto pb-16 mt-20'>
                 <aside className=' md:px-10 sticky top-0'>
                     <div className='my-4 md:my-8 cursor-pointer'>
                         <h3 className='font-bold text-xs md:text-xl'>Доставка</h3>

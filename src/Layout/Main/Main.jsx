@@ -4,15 +4,11 @@ import { Link, Outlet } from 'react-router-dom';
 import Footer from '../../Routes/Footer/Footer';
 import icon1 from '../../assets/icon/icon1.png'
 import Dropdown from '../../components/dropdown';
+import useProductData from '../../utils/useProductData';
 
 const Main = () => {
-    const [data, setData] = useState([])
-    useEffect(() => {
-        fetch('products.json')
-            .then(res => res.json())
-            .then(data => setData(data))
-    }, [])
-    console.log((data));
+    const productData = useProductData();
+    const productCategoryData = productData.filter(item => item.category === 'Холодные напитки');
     return (
         <div>
             <Header></Header>
@@ -38,6 +34,21 @@ const Main = () => {
                         <Link to='/product2' className='md:px-2 ms-[-15px] flex items-center hover:bg-[#E7E6E4] p-1  rounded-xl active:text-black active:font-bold focus:font-bold'>
                             <img className='w-6 h-6 md:w-11 md:h-11' src='/icon/menu-2.png' alt="" />
                             Выпечка
+                        </Link>
+
+                        <Link to='/product3' className='md:px-2 ms-[-15px] flex items-center hover:bg-[#E7E6E4] p-1  rounded-xl active:text-black active:font-bold focus:font-bold'>
+                            <img className='w-6 h-6 md:w-11 md:h-11' src='/icon/menu-3.png' alt="" />
+                            Красота и гигиена
+                        </Link>
+
+                        <Link to='/product4' className='md:px-2 ms-[-15px] flex items-center hover:bg-[#E7E6E4] p-1  rounded-xl active:text-black active:font-bold focus:font-bold'>
+                            <img className='w-6 h-6 md:w-11 md:h-11' src='/icon/menu-4.png' alt="" />
+                            Горячие напитки
+                        </Link>
+
+                        <Link to='/product5' className='md:px-2 ms-[-15px] flex items-center hover:bg-[#E7E6E4] p-1  rounded-xl active:text-black active:font-bold focus:font-bold'>
+                            <img className='w-6 h-6 md:w-11 md:h-11' src='/icon/menu-5.png' alt="" />
+                            Десерты
                         </Link>
 
 

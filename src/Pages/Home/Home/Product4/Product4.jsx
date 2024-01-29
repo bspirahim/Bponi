@@ -1,10 +1,11 @@
+
 import React, { useState } from 'react';
 import useProductData from '../../../../utils/useProductData';
 
-const Product2 = () => {
+const Product4 = () => {
     const [modalData, setmodalData] = useState([])
     const productData = useProductData();
-    const productCategoryData = productData.filter(item => item.category === 'Выпечка');
+    const productCategoryData = productData.filter(item => item.category === 'Горячие напитки');
 
     const loadModal = (id) => {
         console.log(id);
@@ -76,4 +77,4 @@ const Product2 = () => {
     );
 };
 
-export default Product2;
+export default Product4;

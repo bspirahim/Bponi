@@ -1,35 +1,26 @@
-import React, { useEffect, useState } from 'react';
+
+import { useState } from 'react';
+import useProductData from '../../../utils/useProductData';
 
 
 const Product1 = () => {
-    const [products, setProducts] = useState([])
     const [modalData, setmodalData] = useState([])
+    const productData = useProductData();
+    const productCategoryData = productData.filter(item => item.category === 'Холодные напитки');
 
-
-
-
-    useEffect(() => {
-        fetch('product.json')
-            .then(res => res.json())
-            .then(data => {
-                const salad = data.filter(item => item.category === 'salad');
-                setProducts(salad);
-            })
-    }, [])
 
     const loadModal = (id) => {
         console.log(id);
-        const found = products.find(element => element._id == id);
+        const found = productCategoryData.find(element => element._id == id);
         setmodalData(found);
         window.my_modal_4.showModal(id)
     }
 
-    console.log(products);
     return (
         <div>
             <div className='grid grid-cols-4 gap-3'>
                 {
-                    products.map(item =>
+                    productCategoryData.map(item =>
                         <>
                             <div onClick={() => loadModal(item._id)} className="card w-auto bg-white cursor-pointer rounded-2xl">
                                 <figure><img className='cursor-pointer p-3 pb-0 rounded-2xl' src={item.image} alt="Shoes" /></figure>

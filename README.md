@@ -1,8 +1,12 @@
-# React + Vite
+# Bponi Interview Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I have cloned this design from 
 
-Currently, two official plugins are available:
+https://eda.yandex.kz/en-kz/retail/almaty/helios?placeSlug=helios_trxqj
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+## Tech Stack
+
+**Client:** React JS, TailwindCSS, Swiper Slider
+

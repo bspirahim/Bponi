@@ -8,7 +8,7 @@ const useProductData = () => {
     // Fetch your JSON data here
     const fetchData = async () => {
       try {
-        const response = await fetch('product.json'); // Replace with your API endpoint or JSON file path
+        const response = await fetch('/product.json'); // Replace with your API endpoint or JSON file path
         const data = await response.json();
         setProductData(data);
       } catch (error) {

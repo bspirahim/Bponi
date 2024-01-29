@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+
 import Header from '../../shared/Header/Header';
 import { Link, Outlet } from 'react-router-dom';
-import Footer from '../../Routes/Footer/Footer';
-import icon1 from '../../assets/icon/icon1.png'
-import Dropdown from '../../components/dropdown';
+import Footer from '../../shared/Footer/Footer';
+import Sidebar from '../../shared/Sidebar/Sidebar';
 
 
 const Main = () => {
@@ -24,31 +23,7 @@ const Main = () => {
                     <div className='flex flex-col'>
                         <h1 className='font-bold text-xs md:text-xl mb-1'>Catalog</h1>
 
-                        <Link to='/' className='md:px-2 ms-[-15px] flex items-center hover:bg-[#E7E6E4] p-1  rounded-xl
-                         active:text-black focus:font-bold
-                        '>
-                            <img className='w-6 h-6 md:w-11 md:h-11' src={icon1} alt="" />
-                            Холодные напитки
-                        </Link>
-                        <Link to='/product2' className='md:px-2 ms-[-15px] flex items-center hover:bg-[#E7E6E4] p-1  rounded-xl active:text-black active:font-bold focus:font-bold'>
-                            <img className='w-6 h-6 md:w-11 md:h-11' src='/icon/menu-2.png' alt="" />
-                            Выпечка
-                        </Link>
-
-                        <Link to='/product3' className='md:px-2 ms-[-15px] flex items-center hover:bg-[#E7E6E4] p-1  rounded-xl active:text-black active:font-bold focus:font-bold'>
-                            <img className='w-6 h-6 md:w-11 md:h-11' src='/icon/menu-3.png' alt="" />
-                            Красота и гигиена
-                        </Link>
-
-                        <Link to='/product4' className='md:px-2 ms-[-15px] flex items-center hover:bg-[#E7E6E4] p-1  rounded-xl active:text-black active:font-bold focus:font-bold'>
-                            <img className='w-6 h-6 md:w-11 md:h-11' src='/icon/menu-4.png' alt="" />
-                            Горячие напитки
-                        </Link>
-
-                        <Link to='/product5' className='md:px-2 ms-[-15px] flex items-center hover:bg-[#E7E6E4] p-1  rounded-xl active:text-black active:font-bold focus:font-bold'>
-                            <img className='w-6 h-6 md:w-11 md:h-11' src='/icon/menu-5.png' alt="" />
-                            Десерты
-                        </Link>
+                       <Sidebar></Sidebar>
 
 
 
@@ -56,24 +31,8 @@ const Main = () => {
 
                 </aside>
 
-                <div className='col-span-3 pe-6'>
-                    <div className='mt-8 mb-6 md:space-y-1'>
-                        <p className=' text-black opacity-50  hover:opacity-100 cursor-pointer mb-3.5'>Helios <span className='ps-4'>/</span></p>
-
-                        <h2 className='font-bold text-[40px] leading-9 text-[#21201f]'>Холодные напитки</h2>
-
-                    </div>
-
-                    <div className='mb-8'>
-                        <Dropdown></Dropdown>
-                    </div>
-
                     <Outlet></Outlet>
 
-                    <p className='md:pt-8 leading-9 text-[#9E9B98]'>Contractor (seller) ТОО "Гелиос", 050000, 050000, Алматы, ул. Карасай батыра, 69, BIN 990940004405
-                        <br />
-                        Business hours: from 00:00 to 05:00; from 07:00 to 24:00</p>
-                </div>
             </div>
 
 

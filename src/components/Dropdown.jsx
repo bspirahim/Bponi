@@ -13,8 +13,7 @@ const Dropdown = () => {
                         <FaAngleDown className='md:text-lg'></FaAngleDown>
                     </summary>
                     <ul className="md:p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box md:w-52">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
+                        <li><a>Least expensive first</a></li>
                     </ul>
                 </details>
             </div>

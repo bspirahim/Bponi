@@ -69,3 +69,10 @@ body {
     font-size: 16px;
     line-height: 16px;
 }
+
+.swiper-button-prev.swiper-button-disabled,.swiper-button-next.swiper-button-disabled{
+    display: none;
+}
+.swiper-slide {
+    height: 100% !important;
+}

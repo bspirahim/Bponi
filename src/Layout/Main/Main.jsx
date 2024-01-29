@@ -4,11 +4,10 @@ import { Link, Outlet } from 'react-router-dom';
 import Footer from '../../Routes/Footer/Footer';
 import icon1 from '../../assets/icon/icon1.png'
 import Dropdown from '../../components/dropdown';
-import useProductData from '../../utils/useProductData';
+
 
 const Main = () => {
-    const productData = useProductData();
-    const productCategoryData = productData.filter(item => item.category === 'Холодные напитки');
+    
     return (
         <div>
             <Header></Header>
